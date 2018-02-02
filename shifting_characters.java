@@ -10,5 +10,11 @@ public class shifting_characters
         
         StringBuffer sin = new StringBuffer(br.readLine());
         int k = Integer.parseInt(br.readLine());
+        
+        StringBuffer sout = new StringBuffer(sin);
+        for(int i = 0 ; i < sin.length();i++)
+        {
+            sout.setCharAt((i+k)%sin.length(), sin.charAt(i));
+        }
     }
 }
