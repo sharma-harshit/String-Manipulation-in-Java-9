@@ -16,5 +16,7 @@ public class shifting_characters
         {
             sout.setCharAt((i+k)%sin.length(), sin.charAt(i));
         }
+        
+        System.out.println(sout);
     }
 }
